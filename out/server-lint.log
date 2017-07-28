@@ -1,0 +1,12 @@
+FAIL	index.js (9)
+index.js:1	Expected ';' and instead saw 'const'.
+index.js:18:19	Unexpected trailing space.
+index.js:29:3	Unexpected trailing space.
+index.js:42:1	Unexpected trailing space.
+index.js:53:1	Unexpected trailing space.
+index.js:57:2	Unexpected trailing space.
+index.js:72:2	Unexpected trailing space.
+index.js:79:4	Unexpected trailing space.
+index.js:85:3	Unexpected trailing space.
+
+# JSLint failed, 9 violations in 1.  1 files scanned.

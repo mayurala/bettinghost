@@ -1,0 +1,19 @@
+{
+  "name": "totebetting",
+  "version": "1.0.0",
+  "description": "Interview Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "mocha",
+    "lint":"grunt default"
+  },
+  "author": "quadir",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "grunt": "^1.0.1",
+    "grunt-jslint": "^1.1.15",
+    "mocha": "^3.4.2"
+  }
+}
