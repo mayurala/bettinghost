@@ -74,7 +74,7 @@ After providing dummy data and pressing 'Ctrl+t', following prompt will appear o
 ```sh
 Data has been submitted please submit the result and Press 'Ctrl+D'
 ```
-Copy the following result data and paste to input terminal and press 'enter'
+Copy the following result data and paste to input terminal and press 'enter'.
 Press 'ctrl+d' to see the result.
 > Result data should be in [ Result:`<first>`:`<second>`:`<third>` ] format  
 ```sh
