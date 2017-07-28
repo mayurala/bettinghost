@@ -31,7 +31,7 @@ Prompt will appear for the input data
 Please provide the dummy data input and press 'Enter' followed by ctrl t
 ```
 User need to paste the following data as input data in the terminal and press 'Enter' to submit data to the application and press 'ctrl + t' for the next prompt.
-> Dummy data should be in [ Bet:<product>:<selections>:<stake> ] format    
+> Dummy data should be in [ Bet:`<product>`:`<selections>`:`<stake> `] format    
 ```sh
 Bet:W:1:3
 Bet:W:2:4
@@ -76,7 +76,7 @@ Data has been submitted please submit the result and Press 'Ctrl+D'
 ```
 Copy the following result data and paste to input terminal and press 'enter'
 Press 'ctrl+d' to see the result.
-> Result data should be in [ Result:<first>:<second>:<third> ] format  
+> Result data should be in [ Result:`<first>`:`<second>`:`<third>` ] format  
 ```sh
 Result:2:3:1
 ```
