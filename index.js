@@ -66,6 +66,8 @@ resultArr.shift();
 // calculate amount collected from each product after deduction commission
 // Amount collected from winners
 function dividendCl(pdName,slot,dvd = 1){ // accept parameters : product name, winning order, divide 
+    if (typeof(pdName) == 'undefined' ||  typeof(slot) == 'undefined' ) return
+ 
     // Total amount collected from each product after commission
     //dvd is the dividing method amont stake holders
     var totalAmountCollectd = amountAfterCommission (pdName)/dvd;
@@ -88,6 +90,7 @@ function amountAfterCommission(pdName){
 }
 //Show result
 function renderResult(){
+    if(!dataArr.length) return;
     var winYield = dividendCl('w',resultArr[0]);
     var placeYield1 = dividendCl('p',resultArr[0],3);
     var placeYield2 = dividendCl('p',resultArr[1],3);
@@ -95,7 +98,12 @@ var placeYield3 = dividendCl('p',resultArr[2],3);
 var exactaYield = dividendCl('e',resultArr.slice(0,2));
 rdInf.setPrompt("\n Result is : \n");
     rdInf.prompt();
+    try{
     console.log(` Win:2:$${winYield.trim()} \n Place:2:$${placeYield1.trim()} \n Place:3:$${placeYield2.trim()} \n Place:1:$${placeYield3.trim()} \n Exacta:2,3:$${exactaYield.trim()}`);
+    }catch(e){
+        console.log("data is not formatted");
+        process.exit();
+    }
 }
 
 
